@@ -66,7 +66,10 @@ For no prices for a specific community or houses under a specific community id, 
 Handling edge cases and error handling has been done accordingly.
 
 ## Images
+### Landing Page
 <img width="1512" alt="Screen Shot 2023-12-23 at 7 01 08 PM" src="https://github.com/HarshalBhalerao/DreamHouseApp/assets/70837272/732d9b2f-eb36-4f05-aa69-1b2de30fc570">
+
+### List of houses in that specific geographic community
 <img width="1512" alt="Screen Shot 2023-12-23 at 7 01 57 PM" src="https://github.com/HarshalBhalerao/DreamHouseApp/assets/70837272/e4a88d4c-d742-42a5-bb02-6e5373a03378">
 
 
