@@ -4,8 +4,8 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Box, CardActionArea, Grid, IconButton, Tooltip } from '@mui/material';
-import NavBar from "./appbar";
-import ListHouse from "./listHouse";
+import NavBar from "./components/appbar";
+import ListHouse from "./components/listHouse";
 
 // Community interface
 interface Community {

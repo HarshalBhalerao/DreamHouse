@@ -1,29 +1,66 @@
-# API Routes Example with CORS
+# DreamHouseApp
+Next.js Full-Stack Application which shows the list of available houses in different geographic communities. Users can book an appointment, rent a house or buy a house. Information regarding each house including its type, price and area is all provided.
 
-Next.js ships with [API routes](https://nextjs.org/docs/api-routes/introduction) which provides an easy solution to build your own `API`.
+## Overview
+- The app has a landing page, which contains a list of geographic communities in alphabetical order.
+- App contains a Navbar with menu, login, booking, and rent/buy buttons.
+- Each geographic community is represented in a card, which contains the name of community, group and average price.
+- Cards have a visit button, this opens a modal with a table. This table contains the list of different types of houses including their price and area. User can book an appointment, rent, or buy the house.
 
-This example shows how to create an `API` endpoint with [CORS](https://developer.mozilla.org/docs/Web/HTTP/CORS) headers, using the [cors](https://github.com/expressjs/cors) package.
+## How I created the app?
+I used the following tech stack:
+- Next.js
+- Typescript
+- Material UI
+- HTML
+- CSS
 
-## Deploy your own
+## Design
+The design is simple and user-friendly. I purposely kept the design minimalistic, there are a few reasons for this:
+- Makes the app user-friendly and simple to understand and easy to use.
+- Tooltips available to help users with understanding icons.
+- Works on screens with different sizes.
+- Too many colors and transitions can lead to user discomfort and annoyance.
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/api-routes-cors)
+Design can be improved by adding: 
+- Herosection with more information about company.
+- Footer section with links to company social media websites.
+- etc.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/api-routes-cors&project-name=api-routes-cors&repository-name=api-routes-cors)
+## Functionality
+Currently on the app, the user can view different geographic communities and their houses.
+Mentioned above were functionalities which can be implemented in future:
+- Book an appointment, rent or buy a property.
+- Login feature
+- Menu
 
-## How to use
+## Follow up question
+The app can be improved in many ways if given more time. Due to busy schedule, the website currently satisfies all the minimum requirement with an additional feature of being able to view different houses in the communities through a pop-up modal.
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+If I had more time I would have:
+- Solved minor bugs and warnings
+- Added HeroSection 
+- Added about us page, contact us page
+- Would have worked on login feature
+- Implemented book now, rent and buy now feature
+- etc
 
-```bash
-npx create-next-app --example api-routes-cors api-routes-cors-app
-```
+The possibilities are endless. There are multiple things that can be done to improve the app.
 
-```bash
-yarn create next-app --example api-routes-cors api-routes-cors-app
-```
+If I had more time, I would have reworked on the following: 
+- Reimplement button component. I would create a separate button component and reuse it. 
+- Instead of using Material-UI components, I would create my own custom components using combination of material-ui and vanilla CSS, then use them in the project to make it unique.
+- Have separate files for functions or business logic. Export these functions and reuse them.
+- Reduce the amount of code in `index.tsx` by refactoring and creating separate component for cards.
+- Write unit tests and test edge cases. Would create custom data just to test the application. 
+- Write tests to test the API.
 
-```bash
-pnpm create next-app --example api-routes-cors api-routes-cors-app
-```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## Technical details
+Certain APIs didn't have imgUrl or prices. Thus, code has been written in a way where these issues can be tackled. 
+
+For no imgUrl's or 404 status code, I have used a default placeholder image.
+
+For no prices for a specific community or houses under a specific community id, I have returned "-" string, to denote nothing. Also, the cards for such geographic communities have been disabled. 
+
+Handling edge cases and error handling has been done accordingly.
