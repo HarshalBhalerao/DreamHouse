@@ -50,16 +50,16 @@ export default function ListHouse({community, home, hide}) {
         <Box sx={style}>
           <Grid container spacing={2}>
             <Grid item xs={10}>
-              <Typography gutterBottom variant="h5" component="div" fontWeight={'bold'} fontFamily={'monospace'}>
-                  {community.name}
+              <Typography gutterBottom variant="h5" fontWeight={'bold'} fontFamily={'monospace'}>
+                  {community?.name}
               </Typography>
               <Typography variant="body2" color="text.secondary" fontFamily={'sans-serif'}>
-                Group: {community.group}
+                Group: {community?.group}
               </Typography>
             </Grid>
             <Grid item xs>
               <Typography align="right">
-                <Tooltip title="Delete" onClick={handleClose}>
+                <Tooltip title="Close" onClick={handleClose}>
                   <IconButton>
                     <CloseIcon />
                   </IconButton>
@@ -82,7 +82,7 @@ export default function ListHouse({community, home, hide}) {
               <TableBody>
                 {filteredHomes?.map((row) => (
                   <TableRow
-                    key={row.name}
+                    key={row?.name}
                     sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                   >
                     <TableCell component="th" scope="row" align="center">

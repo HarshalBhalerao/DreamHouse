@@ -45,7 +45,7 @@ export default function NavBar(props: Props) {
                         <MenuIcon />
                     </IconButton>
                 </Grid>
-                <Grid item xs={8} md={9.5} sm={4} lg={10}>
+                <Grid item xs={4} sm={6} md={8} lg={10}>
                     <Typography variant="h5" component="div" color={'black'} textAlign={'center'} fontFamily={'cursive'} fontStyle={'oblique'}>
                         Dream Home
                     </Typography>

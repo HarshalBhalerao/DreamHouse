@@ -114,7 +114,6 @@ export default function Index() {
    * @returns string
    */
   const displayImage = (imgUrl: string) => {
-    console.log(imgUrl)
     if(imgUrl){
       return imgUrl
     } else{
