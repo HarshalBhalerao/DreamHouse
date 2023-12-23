@@ -59,11 +59,9 @@ If I had more time, I would have reworked on the following:
 ## Technical details
 Certain APIs didn't have imgUrl or prices. Thus, code has been written in a way where these issues can be tackled. 
 
-For no imgUrl's or 404 status code, I have used a default placeholder image.
-
-For no prices for a specific community or houses under a specific community id, I have returned "-" string, to denote nothing. Also, the cards for such geographic communities have been disabled. 
-
-Handling edge cases and error handling has been done accordingly.
+- For no imgUrl's or 404 status code, I have used a default placeholder image.
+- For no prices for a specific community or houses under a specific community id, I have returned "-" string, to denote nothing. Also, the cards for such geographic communities have been disabled. 
+- Handling edge cases and error handling has been done accordingly.
 
 ## Images
 ### Landing Page
